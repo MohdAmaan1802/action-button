@@ -1,0 +1,110 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.button {
+  border: none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-family: Arial, sans-serif;
+  text-decoration: none;
+  transition:
+    background-color 0.3s,
+    border-color 0.3s,
+    box-shadow 0.3s;
+}
+
+.button.small {
+  font-size: 12px;
+  padding: 8px 12px;
+}
+
+.button.medium {
+  font-size: 14px;
+  padding: 10px 15px;
+}
+
+.button.large {
+  font-size: 16px;
+  padding: 12px 20px;
+}
+
+.button.default {
+  background-color: white;
+  color: #4caf50;
+  border-radius: 20px;
+}
+
+.button.default.hover:hover,
+.button.default:focus {
+  background-color: #c7f0d7;
+}
+.button.default:active {
+  background-color: #3e8e41;
+}
+.button.default.disabled {
+  color: #c7f0d7;
+  cursor: not-allowed;
+}
+
+.button.neutral {
+  color: #333;
+  border-radius: 20px;
+}
+
+.button.neutral.hover:hover,
+.button.neutral:focus {
+  background-color: #e6e6e6;
+}
+
+.button.neutral.disabled {
+  color: #9e9e9e;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+.button.reverse {
+  background-color: #000;
+  color: #fff;
+  border-radius: 20px;
+}
+
+.button.reverse.hover:hover,
+.button.reverse:focus {
+  background-color: #333;
+}
+
+.button.reverse:active {
+  background-color: #000;
+}
+.button.reverse.disabled {
+  color: #9e9e9e;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+.button.textOnly {
+  gap: 0;
+}
+
+.button.iconOnly {
+  gap: 0;
+  padding: 10px;
+}
+
+.button.iconWithText {
+  gap: 2px;
+}
+
+.button svg {
+  flex-shrink: 0;
+  margin-right: 2px;
+}
+
+.button.iconOnly svg {
+  margin-right: 0;
+}
